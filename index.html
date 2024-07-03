@@ -183,35 +183,105 @@
     <h1> 2. Fundamentos de la Teoría de Probabilidad </h1>
     
     <h2> 2.1 Técnicas de Conteo </h2>
+    Las técnicas de conteo nos permite determinar el número total de resultados que puede tener de hacer combinaciones dentro de un conjunto o conjuntos
     
     <h3> 2.1.1 Principio additivo </h3>
+    Nos dice que si dos eventos no pueden ocurrir simultaneamente, la probabilidad de que al menos uno de de ellos ocurra es la suma de sus probabilidades individuales
     <h3> 2.1.2 Principio multiplicativo </h3>
+    Para calcular la probabilidad de que ocurran dos eventos en secuencia.
     <h3> 2.1.3 Notación Factorial </h3>
+    La notacion factorial se denota como n!, lo que nos idica que hay que multiplicar todos los numeros enteros positivos que hay entre ese numero al 1 
+    <br> Ejemplo: 5!=5×4×3×2×1=120.
     <h3> 2.1.4 Permutaciones </h3>
+    Se refiere a el numero de formas distintas que podemos ordenar un conjunto de objetos distintos
     <h3> 2.1.5 Combinaciones </h3>
+    Son el número de formas diferentes que se pueden seleccionar grupos de r elementos de un conjunto n
+    no importa el orden y su formula es:
+    <br><img src="https://economipedia.com/wp-content/uploads/Combinatoria-sin-repetici%C3%B3n-f%C3%B3rmula-1.jpg" alt="">
+
+
     <h3> 2.1.6 Diagrama de Arbol </h3> 
+    Se representa graficamente enumerando todas las posibles ramificaciones y resultados de una serie de eventos 
     <h3> 2.1.7 Teorema del binomio </h3> 
+    Expresa como desarrollar expresiones de la forma (a+b)^n 
+    Para dos numeros a y b, y un nmero entero n, se expresa de la forma:
+    <br> <img src="https://www.todoestudo.com.br/wp-content/uploads/2016/04/WINWORD_2016-04-06_03-38-30.jpg" alt="">
 
     <h2> 2.2 Teorema fundamental de probabilidad </h2>
+    Establece qie la probabilidad de qie ocurra al menos uno de varios eventos mutuamente ecluyentes es la suma de  las probabilidades individuales de esos eventos
     <h2> 2.3  Probabilidad de Eventos</h2>
     <h3> Definición de espacio muestral </h3>
+    Es el conjunto de todos los posibles resultados de un experimento aleatorio
     <h3> Definición de evento</h3>
+    Es un conjunto de resultados posibles de un experimento aleatorio 
+    
     <h3> Simbología</h3>
+    <ul>
+        <li>A, B, C, … suelen representar eventos específicos.</li>
+        <li>∅ representa el evento imposible (conjunto vacío).</li>
+        <li>𝑆 representa el espacio muestral completo.</li>
+      </ul>
+
     <h3> Unión</h3>
+    Se expresa como A∪B, y nos indica que todos los elementos que pertenecen a al menos uno de los eventos A o B
+    
     <h3> Intersección</h3>
+    Se expresa como A∩B, y nos dice que los elementos pertenecen a ambos eventos A y B
+    
     <h3> Diagramas de Venn</h3>
+    Es la representación gráficas que muestran las relaciones entre los conjuntos (eventos) utilizando círculos o áreas superpuestas que representan las Intersecciones y as uniones entre los conjuntos 
+    <br> <img src="https://concepto.de/wp-content/uploads/2023/12/C-Ejemplo-Diagrama-de-Venn-Matematica.jpg" alt="" height="200">
+
     <h2> 2.4 Probabilidad con Técnicas de Conteo </h2>
     <h3>Axiomas</h3>
+    Los axiomas son las reglas fundamentales de las asignacion de probabilidades a eventos:
+    <ol>
+        <li>La probabilidad de cualquier evento es un número real no negativo.</li>
+        <li>La probabilidad del espacio muestral completo es 1.</li>
+        <li>La probabilidad de la unión de eventos mutuamente excluyentes es la suma de sus probabilidades individuales.</li>
+    </ol>
     <h3>Teoremas</h3>
+    <ol>
+        <li> Teorema 1</li>
+        Si f es un evento nulo o vacío, entonces la probabilidad de que ocurra f debe ser cero
+        
+        <br><img src="https://3.bp.blogspot.com/-mhhQ12ScNq0/T82cTKdxSLI/AAAAAAAAAQ4/LTIa2rQ0Ijo/w234-h101/10.png" alt="">
+        <li> Teorema 2 </li>
+        La probabilidad del complemento de A, Ac debe ser, p(Ac)= 1 – p(A).
+        
+        <br><img src="https://1.bp.blogspot.com/--O_bwb4-pQU/YDhY5VukB3I/AAAAAAAAZwA/aDhy9GGjBXMxccGnrw-NVh4lmzbu8IIGwCLcBGAsYHQ/s233/t2.png" alt="">
+        <li> Teorema 3</li>
+        Si un evento A Ì B, entonces la p(A) £ p(B).
+        
+        <br> <img src="https://1.bp.blogspot.com/-8p6wv3MvkA0/YDhZJnIqyJI/AAAAAAAAZwI/o6Pt-XijFhcdE3lGlCLpMTDbpQvezLEEgCLcBGAsYHQ/s217/t3.png" alt="">
+        <li> Teorema 4</li>
+        La p( A \ B )= p(A) – p(AÇB)
+        
+        <br><img src="https://1.bp.blogspot.com/-RyGJzr1c1cw/YDhZNdm5J8I/AAAAAAAAZwQ/SoQz08WMvgQOnOk-1E377NgjknroA5KUQCLcBGAsYHQ/w215-h112/t4.png" alt="">
+        <li> Teorema 5</li>
+        Para dos eventos A y B, p(AÈB)=p(A) + p(B) – p(AÇB)
+        
+        <br><img src="https://1.bp.blogspot.com/-Je9I7MAIKwY/YDhZSK-GGXI/AAAAAAAAZwU/qDoHZ9qGCUgzWT_JSsF15sX8MT2s6H1nACLcBGAsYHQ/w191-h116/t5.png" alt="">
+    </ol>
+
+    <h2>2.5 Probabilidad condicional</h2>
+    <h3>Dependiente</h3>
+    <p>La probabilidad condicional de un evento A dado que ha ocurrido otro evento B se denomina dependiente cuando la probabilidad de A está condicionada por la ocurrencia de B</p>
     
-    <h2> 2.5 Probabilidad condicional </h2>
-    <h3> Dependiente</h3>
-    <h3> Independiente</h3>
-    <h2> 2.6 Ley multiplicativa</h2>
-    <h2> 2.7 Eventos independientes</h2>
-    <h3> Regla de Bayes </h3>
-
-
+    <h3>Independiente</h3>
+    <p>La probabilidad condicional de un evento A dado que ha ocurrido otro evento B se denomina independiente cuando la ocurrencia de B no afecta la probabilidad de A. 
+    <h2>2.6 Ley multiplicativa</h2>
+    <p>Se utiliza para calcular la probabilidad de la intersección de dos eventos (A y B) 
+    <h2>2.7 Eventos independientes</h2>
+    <h3>Regla de Bayes</h3>
+    <p>La probabilidad de que dos sucesos dependientes ocurran puede expresarse de la siguiente forma:
+    <br><br> P(A y B) = P(A) x P(B|A), donde B|A se lee como B condicionada por A.
+    <br> También podríamos expresarlo cambiando A por B, de la siguiente forma:
+    <br> P(A y B) = P(B) x P(A|B)
+    <br> y como la parte izquierda de las dos ecuaciones es la misma podríamos igualarlas y obtener otra ecuación diferente:
+    <br> P(A) x P(B|A) = P(B) x P(A|B)
+    <br> P(B|A) = [P(B) x P(A|B)] / P(A)
+    </p>
 
 </body>
 
@@ -242,6 +312,11 @@
     tr:hover {
         background-color: #ddd;
     }
+    .math {
+        font-family: "Times New Roman", Times, serif; /* Elige una fuente adecuada para fórmulas matemáticas */
+        font-size: 18px; /* Tamaño de fuente ajustable */
+        line-height: 1.5; /* Espaciado de línea para una mejor legibilidad */
+      }
    
     
 </style>

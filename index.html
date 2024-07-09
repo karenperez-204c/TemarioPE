@@ -484,13 +484,17 @@
 
     <h4>Probabilidad acumulada</h4>
     La probabilidad de que X sea menor o igual a un valor b se calcula usando la función de distribución acumulada:
-
-
-
-
+   
+    <h3>Variables aleatorias continuas: VIDEO </h3>
+    <iframe src="https://drive.google.com/file/d/1uLUbBpaoR56FEpD6Q9lvBqMn1VYtXFTG/view?usp=sharing" width="640" height="360" allow="autoplay" allowfullscreen></iframe>
+    
+    <h3>Variables aleatorias discretas: VIDEO</h3>
+    <iframe src="https://drive.google.com/file/d/1uLUbBpaoR56FEpD6Q9lvBqMn1VYtXFTG/view?usp=sharing"  width="640" height="360" allow="autoplay" allowfullscreen></iframe>
+    <br><br>
 
     <h1>4 - Distribuciones de Probabilidad. </h1>
-
+    
+    
     <h2>4.1 Función de probabilidad</h2>
     <p>La función de probabilidad, también conocida como función de masa de probabilidad (PMF, por sus siglas en inglés) en el caso de variables discretas, asigna una probabilidad a cada valor posible de una variable aleatoria discreta. Para una variable aleatoria \(X\), la función de probabilidad \(P(X = x)\) cumple con las siguientes propiedades:</p>
     <ul>
@@ -505,11 +509,11 @@
     <p>donde \(X\) es el número de éxitos, \(k\) es un entero entre 0 y \(n\), y \(\binom{n}{k}\) es el coeficiente binomial.</p>
     <h3>Código en Python</h3>
     <pre><code>from scipy.stats import binom
-n = 10
-p = 0.5
-k = 4
-prob = binom.pmf(k, n, p)
-</code></pre>
+        n = 10
+        p = 0.5
+        k = 4
+        prob = binom.pmf(k, n, p)
+        </code></pre>
 
     <h2>4.3 Distribución hipergeométrica</h2>
     <p>La distribución hipergeométrica describe la probabilidad de \(k\) éxitos en \(n\) extracciones sin reemplazo de una población finita de tamaño \(N\) que contiene \(K\) éxitos. La función de probabilidad hipergeométrica está dada por:</p>
@@ -517,12 +521,12 @@ prob = binom.pmf(k, n, p)
     <p>donde \(\binom{a}{b}\) es el coeficiente binomial.</p>
     <h3>Código en Python</h3>
     <pre><code>from scipy.stats import hypergeom
-N = 100
-n = 20
-K = 10
-k = 4
-prob = hypergeom.pmf(k, N, n, K)
-</code></pre>
+        N = 100
+        n = 20
+        K = 10
+        k = 4
+        prob = hypergeom.pmf(k, N, n, K)
+        </code></pre>
 
     <h2>4.4 Distribución de Poisson</h2>
     <p>La distribución de Poisson modela el número de eventos que ocurren en un intervalo de tiempo o espacio fijo, con una tasa promedio \(\lambda\). La función de probabilidad de la distribución de Poisson está dada por:</p>
@@ -530,10 +534,10 @@ prob = hypergeom.pmf(k, N, n, K)
     <p>donde \(X\) es el número de eventos y \(k\) es un entero no negativo.</p>
     <h3>Código en Python</h3>
     <pre><code>from scipy.stats import poisson
-lmbda = 3
-k = 2
-prob = poisson.pmf(k, lmbda)
-</code></pre>
+        lmbda = 3
+        k = 2
+        prob = poisson.pmf(k, lmbda)
+        </code></pre>
 
     <h2>4.5 Distribución normal</h2>
     <p>La distribución normal, o distribución de Gauss, es una distribución continua que se caracteriza por su forma de campana y simetría alrededor de la media \(\mu\). Su función de densidad de probabilidad está dada por:</p>
@@ -541,11 +545,11 @@ prob = poisson.pmf(k, lmbda)
     <p>donde \(\mu\) es la media y \(\sigma\) es la desviación estándar.</p>
     <h3>Código en Python</h3>
     <pre><code>from scipy.stats import norm
-mu = 0
-sigma = 1
-x = 2
-prob = norm.pdf(x, mu, sigma)
-</code></pre>
+        mu = 0
+        sigma = 1
+        x = 2
+        prob = norm.pdf(x, mu, sigma)
+        </code></pre>
 
     <h2>4.6 Distribución T-student</h2>
     <p>La distribución T de Student es una distribución continua utilizada cuando se estima la media de una población normal con una muestra de tamaño pequeño y se desconoce la desviación estándar de la población. Su función de densidad de probabilidad está dada por:</p>
@@ -561,8 +565,13 @@ prob = norm.pdf(x, mu, sigma)
     <p>La distribución F es una distribución continua que surge en el contexto de la comparación de dos varianzas muestrales y se usa en análisis de varianza (ANOVA). Su función de densidad de probabilidad está dada por:</p>
     <p>\[f(x) = \frac{\left(\frac{d_1}{d_2}\right)^{d_1/2} x^{(d_1/2) - 1}}{B(d_1/2, d_2/2) \left(1 + \frac{d_1 x}{d_2}\right)^{(d_1 + d_2)/2}}\]</p>
     <p>donde \(d_1\) y \(d_2\) son los grados de libertad de los numerador y denominador, respectivamente, y \(B\) es la función beta.</p>
-
     <br><br>
+    
+    <h3>Ejercicio 8 :VIDEO</h3>
+    <iframe src="https://drive.google.com/file/d/1MWLu9x7je_xvWq2FiCclR7ZfHJmszL3j/view?usp=sharing"  width="640" height="360" allow="autoplay" allowfullscreen></iframe>
+    <br><br>
+
+  
     <h1>5 - Regresión lineal</h1>
     <h2>5.1 Regresión y correlación</h2>
     <h3>5.1.1 Diagrama de dispersión</h3>

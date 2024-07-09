@@ -3,221 +3,355 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <body style="background-color:#dcedf8"> 
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <body style="background-color:#dcedf8"> <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     
     <title> Temario PROBABILIDAD Y ESTADISTICA (Verano) </title>
 </head>
 
+    
     <h1> Estadística descriptiva </h1>
     <h2> 1.1 Conceptos básicos de estadística: </h2>
     <ul>
         <li> Definición </li> 
-        La estadistica se refiere a un conjunto de métodos para manejar la obtencion, presentacion y análisis de observaciones númericas 
-        <br>Estadística descriptiva:
-        Este termino se refiere al analisis, el resumen y la presentacion de los resultados relacionados a un conjunto de datos derivados 
-        <br><br>
+        Se refiere al análisis, resumen y presentación de resultados en el contexto de un conjunto de datos de una muestra o de una población completa. La estadística descriptiva incluye tres categorías principales: 
+        
+        <ul style= "list-style-type: square;">
+            <li>distribuciones de frecuencia </li>
+            <li>medidas de tendencia central </li>
+            <li>de variación</li> 
+        </ul>
+    <br>
+    
+    
+    <li> Teoría de decisión </li>
+    La teoría de decisión nos ayuda a tomar las mejores decisiones posibles al analizar diferentes opciones y situaciones, utilizando criterios como la maximización del valor esperado para elegir la alternativa más beneficiosa.
+    <br><br>
 
-        <li> Teoría de decisión </li>
-        Esta teoria se basa en que las decisiones que se toman en funcion de la informacion disponible asi como sus posibles consecuancias de cada acción
-        <br><br>
+    <li> Población </li>
+    Una población es aquel conjunto del que estamos interesados en investigar, todos estos elementos o individuos tienen algo en común, y puede haber tanto población infinita como población finita
+    <br><br>
 
-        <li> Población </li>
-        Es el conjunto completo de la experimentacion puede haber tanto población infinita como poblacion finita
-        <br><br>
+    <li> Muestra aleatoria </li>
+    La muestra aleatoria nos dice que es un conjunto mas pequeño que el de la población, se podría decir que es una sola parte de la población, esto con el fin de hacer mas optimo los cálculos 
+    <br><br>
 
-        <li> Muestra aleatoria </li>
-        Se refiere a una sola parte de la poblacion, esto se ahce con el fin de no registrar todos los datos de la población 
-        <br><br>
+    <li> Parámetros aleatorios </li>
+    Los parámetros aleatorios son valores o un conjunto de valores con distintas probabilidades, son las características que son importantes para tomarlos, y nos ayuda a entender el comportamiento de la población en su conjunto
+    <br>
+    </ul>
 
-        <li> Parámetros aleatorios </li>
-        Son las caracteriticas que debemos tomar en cuenta para registrar los datos 
-        <br>
 
-      </ul>
     <h2> 1.2 Descripción de datos: </h2>
     <ul>
         <li> Datos agrupados  </li> 
-        Son aquellos que estan clasifisificados mas especificamente estan separados por categorias y cada dato u observacion solo puede pertecer a una sola 
+        Los datos agrupados son aquellos que están clasificados por categorías cada uno de acuerdo a un criterio especifico y cada dato u observación solo puede pertenecer a una de esta
         <br><br>
 
         <li> Datos no agrupados</li>
-        A diferencia de los agrupados estos no han sido clasificados 
+        Los datos no agrupados son los que al recolectarlos se siguen manteniendo igual, no se la asigna una clasificación como a los agrupados
         <br><br>
 
         <li> Frecuencia de clase </li>
-        Es el numero o ya sea porcentaje que se encuentra dentro de un intervalo de clase determinado en ua distribución estadistica agrupada o histograma construido a partir de aquella
+        La frecuencia de clases es el número o porcentaje que se la asigna despues de agrupar los datos y de este se obtiene su marcas, se utiliza para poder representarlos en un histograma 
         <br><br>
 
         <li> Frecuencia relativa </li>
-        Una frecuencia relativa se encarga de decidir el porcentaje que ocupa la frecuencia absoluta (la frecuencia absoluta ocuparan mas adelante del 100%)
+        La frecuencia relativa es la que nos indica que porcentaje pertenece a cada valor que tenemos en la muestra de los datos y al sumar todos estos nos debe de dar un 100% 
         <br><br>
 
         <li> Punto medio </li>
-        Es el punto que se encuentra exactamente a la mitad de otros dos puntos x, o los extremos de un segmento 
+        El punto medio, es aquel punto de un conjunto ordenado de datos de mayor a menor este se encuentre exactamente por la mitad de ellos, en caso de encontrar dos valores por la mitad de deben de obtener su promedio
         <br><br>
 
         <li> Límites  </li>
-        Un limite nos indica el valor al que una funcion se aproxima conforme  sus valores de entrada cada ve mas a cierto numero 
+        Los limites son dicen entre que valores se encuentran nuestros datos, cuando los datos estan ordenados podemos diferenciarlos porque son los valores que tenemos en los extremos 
         <br><br>
 
       </ul>
     <h2> 1.3 Medidas de tendencia central </h2>
     <ul>
         <li> Media aritmética </li>
-        Es la medida que obtiene un promedio de los datos, se obtiene sumando los productos de cada valor de las variables por su frecuencia y al fina dividir estas por el total de observaciones 
+        La media aritmética es prácticamente el promedio de los datos, la forma en la que se calcula es sumando todos los valores y después dividiéndola entre los numero de valores sumados, la formula se representa de la forma
+        $$ \overline{x} = \frac{1}{n} \sum_{i=1}^{n} x_i $$
+        <ul style= "list-style-type: square;">
+            <li>n: es número total de observaciones </li>
+            <li>x: la variable  </li>
+            <li>i: el incremento o posición de cada valor</li> 
+        </ul>
+    
         <br><br>
 
         <li> Media geométrica </li>
-        La media geométrica posee características como la invariancia al escalado y su conexión con la desigualdad de las medias
+        La media aritmética nos sirve para los cálculos de un promedio de porcentajes o en caso de que una distribución de datos sea muy dispersa y, es la forma más eficaz de obtenerlo 
+        <br>La fórmula es: 
+        $$\overline{X} = \sqrt[N]{X_1 \cdot X_2 \cdot ... \cdot X_N}$$
+        <ul style= "list-style-type: square;">
+            <li>n: es número total de observaciones </li>
+            <li>x: la variable  </li>
+            <li>i: el incremento o posición de cada valor</li> 
+        </ul>
         <br><br>
 
         <li> Media ponderada </li>
-        La media ponderada se aplica en contextos donde ciertos valores tienen mayor relevancia que otros, como en la evaluación de notas o calificaciones
+        La media ponderada a diferencia de la media aritmética también obtiene un promedio pero en lugar de sumarlos y después dividirlo lo que hace es que le da el valor correspondiente a cada elemento 
+        <br>La fórmula es:
+        $$ \overline{X} = \frac{N}{\sum_{i=1}^{N} \frac{1}{w_i X_i}} $$
+        <ul style= "list-style-type: square;">
+            <li>n: es número total de observaciones </li>
+            <li>x: la variable  </li>
+            <li>i: el incremento o posición de cada valor</li> 
+            <li>w: es el peso de ponderación    </li>
+        </ul>
         <br><br>
 
         <li> Mediana </li>
-        La mediana es el valor de la variable que divide a la distribución de frecuencias en dos partes iguales, su obtencion es ordenando las frecuencias de mayor  a menor y el valor medio es el que tomara el valor de mediana  
-        <br><br>
+        La mediana se refiere a aquel valor en medio de todos los datos que obtenemos al ordenar de menor a mayor, en caso de que se encuentren dos valores en medio estos se deben de sumar y dividir entre 2
+        <br>
+        Ejemplo 
+        $${0 , 1 , 1 , 2 , 2 , 3 , 4 , 5, 9 , 10 , 16} $$
+        <ul style= "list-style-type: square;">
+            <li>Mediana = 3 </li>
+        </ul>
 
+        <br><br>
+        
         <li> Moda</li>
-        En probabilidad la moda es el que tiene una mayor frecuencia absoluta
+        La moda se ve representado por el dato que mayores veces se repite en un conjunto
+        <br>
+        Ejemplo $$ {0 , 1 , 0 , 2 , 2 , 1 , 2 , 1 , 1 , 2} $$
+        <ul style= "list-style-type: square;">
+            <li>Moda = 2 </li>
+        </ul>
+          
+
         <br><br>
 
         <li> Medidas de dispersión</li>
-        Las medidas de dispercion nos dice que tanto se agrupan los datos esta respecto a su media aritmética, hay muchos tipos de medidias de dispersión como el rango, varianza, desviacion, etc.
+        Las medidas de dispersión nos dicen que tan cerca o alejados se encuentran los datos del conjunto, podemos encontrar muchos tipos de medidas de dispersión
+        <br>
+        Podemos encontrar muchos tipos de medidias de dispersión como lo son:
+
+        <ul style= "list-style-type: square;">
+            <li>El rango</li>
+            <li>Varianza</li>
+            <li>Desviación</li>
+           
+        </ul>
         <br><br>
 
         <li> Varianza</li>
-        Esta medida des dispersion nos indica la variabilidad de una serie de datos con respecto a su media, esta se calcula como la suma de los cuadrados de los residuos dividida por las observaciones totales
+        La varianza es una medida de dispersión que nos dice como los valores se comportan de acuerdo a la media, si están muy cerca o por el contrario se alejan
+        <br><br>
+        En caso de que la varianza sea poblacional se ocupa la formula
+        $$σ^2 = \frac{\sum_{i=1}^{N} (x_i - μ)^2}{N}$$
+        Donde :
+        <ul style= "list-style-type: square;">
+            <li> N: Es el tamaño de la población </li>
+            <li> i: Incremento o posición</li>
+            <li> μ: Es la media poblacional</li>
+           
+        </ul>
+        <br><br>
+        En caso de que la varianza sea muestral se ocupa la formula
+        $$s^2 = \frac{\sum_{i=1}^{n} (x_i - \overline{x})^2}{n - 1}$$
+        Donde :
+        <ul style= "list-style-type: square;">
+            <li> N: Es el tamaño de la muestra </li>
+            <li> i: Incremento o posición</li>
+            <li>  x̅ : Es la media muestral</li>
+           
+        </ul>
         <br><br>
 
         <li> Desviación estándar </li>
-        Se utiliza para calcular la variación o dispersión en la que los puntos de datos individuales, para calcular la media de la rentabilidad (μ) Obtener la desviación de cada rentabilidad de la media (ri– μ) Elevar al cuadrado las desviaciones para obtener todos los valores positivos (ri– μ) 
+        La desviación estándar también nos indica bajo que varianza se encuentran los datos del conjunto, este nos permite calcular de manera más exacta su valor 
+        <br>Se calcula solo sacando la raiz cuadrada de la varianza
+        La formula es:
+        $$  σ = \sqrt{σ^2} = \sqrt{\frac{\sum_{i=1}^{N} (x_i - μ)^2}{N}}$$
+        Donde :
+        <ul style= "list-style-type: square;">
+            <li> σ: Es el tamaño de la población </li>
+            <li> i: Incremento o posición</li>
+            <li> μ: Es la media poblacional</li>
+           
+        </ul>
+        
+        <br><br>
+
         <br><br>
 
         <li> Desviación media </li>
-        Esta medida se utiliza para comprender la razon de porque se alejan los datos de un conjunto promedio, para calcular la desviacion media se suman las diferencias absolutas entre cada valor del conjunto de datos y su media, y se divide el resultado entre el número total de datos
+        
+        La desviación estándar también nos indica la dispersión de los datos, pero se utiliza más para comprender su razón de aquella dispersión, la fórmula para calcularla es distinta , ya que nos da el promedio de las diferencias absolutas
+        <br>
+        Su formula es:
+        $$\text{Desviación media} = \frac{1}{n} \sum_{i=1}^{n} |x_i - \bar{x}|$$
+        <ul style= "list-style-type: square;">
+            <li>n: es número de datos </li>
+            <li>x: son lo datos  </li>
+            <li>i: el incremento o posición de cada valor</li> 
+            <li>x̅ : Es la media del conjunto </li>
+        </ul>
         <br><br>
 
         <li> Rango </li>
-        El rango se puede definir como la diferencia que existe entre el valor mayor y el menor de la distribución, la fórmula para calcular el rango es rango es igual al valor máximo de la muestra menos el valor mínimo de la muestra.
+        El rango son aquellos valores que al ordenarlos están en los extremos para demostrar que tanta diferencia hay entre el valor mínimo al máximo
+        <br>La fórmula para calcularlo es:
+        $$R = \max(x_1, x_2, \ldots, x_n) - \min(x_1, x_2, \ldots, x_n)$$
         <br><br>
     </ul>
-    <h2> 1.4 Parámetros para datos agrupados </h2>
-    Los pasos que debemos de seguir es:
-    <ol>
-        <li> Determinar el rango o recorrido de los datos </li>
-        Rango = Valor mayor – Valor menor
 
-        Establecer el número de clases (k) en que se van a agrupar los datos tomando como base para esto la siguiente tabla
+    <h2> 1.4 Parámetros para datos agrupados </h2>
+    Para el caso de los datos agrupados debemos de 
+    <ol>
+        <li> Determinar el rango de los datos </li>
+        $$R = \max(x_1, x_2, \ldots, x_n) - \min(x_1, x_2, \ldots, x_n)$$
+
+        Establecido el rango debemos de establecer el número de clases (k) en que se van a agrupar los datos
         <br><br>
+        Ejemplo:
         <table>
             <tr>
-                <td> Tamaño de muestra o no. de datos </td>
+                <td> Muestra </td>
                 <td> Numero de clases </td>
             </tr>
             <tr>
-                <td>Menos de 50 </td>
-                <td> 5 a 7  </td>
+                <td> 0 - 99</td>
+                <td> 6 - 10  </td>
             </tr>
             <tr>
-                <td> 50 a 99</td>
-                <td> 6 a 10  </td>
+                <td> 100 a 199 </td>
+                <td> 7 - 12  </td>
             </tr>
             <tr>
-                <td> 100 a 250 </td>
-                <td> 7 a 12  </td>
-            </tr>
-            <tr>
-                <td> 250 en adelante </td>
-                <td> 10 a 20 </td>
+                <td> 200 - 300 </td>
+                <td> 10 - 20 </td>
             </tr>
         </table>
-        <br><br>
-
-        El uso de esta tabla es uno de los criterios que se puede tomar en cuenta para
-        establecer el número de clases en las que se van a agrupar los datos, existen otros
-        para hacerlo.    
-        <br><br>
-
-        <li> Determinar la amplitud de clase para agrupar (C) </li>
-        <br><br>
-        <li> Formar clases y agrupar datos </li>
-
     </ol>
 
     <h2> 1.5 Distribución de frecuencias </h2>
     <h3>
         Distribución de frecuencia para datos no Agrupados: 
     </h3>
-    Es aquella distribucion que nos indica que las frecuencias que aparecen en los datos estadisticos, desde el menor al mayor de un conjunto sin que se haya modifcado. En estas distribuciones los valores de cada variable han sido solamente reagrupados, siguiendo un orden lógico son sus respectivas frecuencias 
+    En una distribución de frecuencia para datos no agrupados debemos de organizar y de ahí resumir los datos, todo esto en una tabla
+        <br>Los pasos a seguir son <br>
+        <ol style= "list-style-type: square;">
+            <li> Recopilar los datos</li>
+            <li> Ordenar los datos </li>
+            <li> Contar las frecuencia </li> 
+        </ol>
 
     <h3>
         Distribución de frecuencia de clase o de datos Agrupados
     </h3>
-    Es aquella distribución en la que la tabular de los datos estadisticosb se encuentran ordenados en clases y con la frecuencia de cada clase, esto se refiere a que los datos originales de varios valores se combinan para formar un intervalor de clase
+    La distribución de frecuencias para datos agrupados se refiere a cuando los datos ya se encuentran en una tabla ordenada por sus clase y frecuencias
+    <br>Ejemplo:
 
+    <table>
+        <tr>
+            <th>Clase</th>
+            <th>Frecuencia</th>
+        </tr>
+        <tr>
+            <td>10-19</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>20-29</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>30-39</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>40-49</td>
+            <td>7</td>
+        </tr>
+    </table>
    
     <h2> 1.6 Técnicas de agrupación de datos</h2>
-    Existen distintas tecnicas de agrupacion estas nos permiten analizar grandes volúmenes de datos y extraer información significativa, permitiendo una mejor toma de decisiones y comprensión de los patrones subyacentes en los datos.
-
 
     <h2> 1.7 Técnicas de muestreo </h2>
     Una muestra seleccionada por muestreo de juicio puede basarse en la experiencia de alguien con la población
 
     <h3> Muestreo probabilístico  </h3>
-    Este tipo de muestreo abarca métodos donde se puede calcular la probabilidad de selección de cualquier muestra posible. Se denominan muestras probabilísticas, ya que no es preciso llamarlas muestras representativas debido a la falta de conocimiento sobre las características de la población, lo que impide asegurar que la muestra represente adecuadamente a dicha población.
+    El muestreo probabilístico es que todos en una población tengan la misma oportunidad de ser seleccionados.
+    Este método utiliza la teoría estadística para seleccionar al azar un pequeño grupo de personas de una población y luego predecir que todas las respuestas juntas coincidirán con la población en general.
+    <br><img src="https://www.universoformulas.com/imagenes/estadistica/inferencia/muestreo-probabilistico.jpg" alt="">
 
     <h3> Muestreo estratificado   </h3>
-    Consiste en la división previa de la población de estudio en grupos o clases que se suponen homogéneos con respecto a alguna característica de las que se van a estudiar. Para una descripción general del muestreo estratificado y los métodos de inferencia asociados con este procedimiento, suponemos que la población está dividida en h subpoblaciones o estratos de tamaños conocidos N1, N2,..., Nh tal que las unidades en cada estrato sean homogéneas respecto a la característica en cuestión. La media y la varianza desconocidas para el i-ésimo estrato son denotadas por mi y si2, respectivamente. 
-    
-    
+    El muestreo estratificado, es un tipo de muestreo consiste en que  el objetivo de la población se separa en segmentos exclusivos, y luego una muestra aleatoria simple se selecciona de cada segmento.
+    <br><img src="https://www.universoformulas.com/imagenes/estadistica/inferencia/muestreo-estratificado.jpg" alt="">
+
     <h3> Muestreo sistemático </h3>
-    Se utiliza cuando el universo o población es de gran tamaño, o ha de extenderse en el tiempo. Primero hay que identificar las unidades y relacionarlas con el calendario (cuando proceda). Luego hay que calcular una constante, que se denomina coeficiente de elevación K= N/n; donde N es el tamaño del universo y n el tamaño de la muestra.
-    
-   
+    El muestreo sistemático es un tipo de muestreo probabilístico donde se hace una selección aleatoria del elemento para la muestra, y luego se seleccionan los elementos posteriores utilizando intervalos fijos o sistemáticos hasta alcanzar el tamaño de la muestra deseado.
+    <br><img src="https://www.universoformulas.com/imagenes/estadistica/inferencia/muestreo-sistematico.jpg" alt="">
+    <br>Consiste en lo siguiente:: 
+    <ol style= "list-style-type: square;">
+        <li> Definir el tamaño de la población</li>
+        <li> Calcular el tamaño de la mestres  </li>
+        <li> Calcular el intervalo de muestreo (k) </li>
+        <li> Seleccionar un punto de inicio aleatorio </li>
+    </ol>
+
+
     <h2> 1.8 Histogramas</h2>
-    Un histograma es una representación gráfica de una variable en forma de barras, donde la superficie de cada barra es proporcional a la frecuencia de los valores representados. En el eje vertical se representan las frecuencias, y en el eje horizontal los valores de las variables, normalmente señalando las marcas de clase, es decir, la mitad del intervalo en el que están agrupados los datos.
+    Un histograma es una representación de los datos estadísticos, en donde se presentan en el eje horizontal las variables y el eje vertical las frecuencias, se presentada de manera gráfica y cada barra tiene el mismo ancho pero no largo 
     <br><br><img src="image.png" />
-
-
 
     <h1> 2. Fundamentos de la Teoría de Probabilidad </h1>
     
-    <h2> 2.1 Técnicas de Conteo </h2>
-    Las técnicas de conteo nos permite determinar el número total de resultados que puede tener de hacer combinaciones dentro de un conjunto o conjuntos
+    <h2>2.1 Técnicas de Conteo </h2>
+    Las  técnicas de conteo nos ayuda en problemas de conjuntos ya que este nos permite decidir el número de resultados posibles en un total de combinaciones, ayuda a problemas grandes a hacerlos más fáciles de resolver
+    <br>Hay distintos tipos de técnicas como lo son:
     
     <h3> 2.1.1 Principio additivo </h3>
-    Nos dice que si dos eventos no pueden ocurrir simultaneamente, la probabilidad de que al menos uno de de ellos ocurra es la suma de sus probabilidades individuales
+    El principio aditivo nos ayuda en los casos de realizar una actividad que a su vez, tiene muchas opciones para que sea realizada. Nos dice que si dos eventos ocurren al mismo tiempo, el número de formas que puede ocurrir el primer o segundo evento suma de m + n
+    
     <h3> 2.1.2 Principio multiplicativo </h3>
     Para calcular la probabilidad de que ocurran dos eventos en secuencia.
+
     <h3> 2.1.3 Notación Factorial </h3>
     La notacion factorial se denota como n!, lo que nos idica que hay que multiplicar todos los numeros enteros positivos que hay entre ese numero al 1 
-    <br> Ejemplo: 5!=5×4×3×2×1=120.
+    <br> Se representa como:
+    $$n! = n \cdot (n - 1) \cdot (n - 2) \cdot ... \cdot 2 \cdot 1$$
+    
     <h3> 2.1.4 Permutaciones </h3>
     Se refiere a el numero de formas distintas que podemos ordenar un conjunto de objetos distintos
+    <br>Su formula para calcularlo es:
+    $$nPk = n \cdot (n - 1) \cdot (n - 2) \cdots (n - k + 1) = \frac{n!}{(n - k)!}$$
+
     <h3> 2.1.5 Combinaciones </h3>
     Son el número de formas diferentes que se pueden seleccionar grupos de r elementos de un conjunto n
     no importa el orden y su formula es:
-    <br><img src="https://economipedia.com/wp-content/uploads/Combinatoria-sin-repetici%C3%B3n-f%C3%B3rmula-1.jpg" alt="">
-
+    $$\binom{n}{k} = \frac{n!}{k!(n - k)!}$$
+    <br><br>
 
     <h3> 2.1.6 Diagrama de Arbol </h3> 
     Se representa graficamente enumerando todas las posibles ramificaciones y resultados de una serie de eventos 
+    <br><img src="https://th.bing.com/th/id/OIP.ahV-owkxZkk27yWJ94b8UAHaIV?rs=1&pid=ImgDetMain" alt="">
+
     <h3> 2.1.7 Teorema del binomio </h3> 
     Expresa como desarrollar expresiones de la forma (a+b)^n 
     Para dos numeros a y b, y un nmero entero n, se expresa de la forma:
-    <br> <img src="https://www.todoestudo.com.br/wp-content/uploads/2016/04/WINWORD_2016-04-06_03-38-30.jpg" alt="">
+    <br>Su fórmula es: 
+    $$(a + b)^n = \sum_{p=0}^{n} \binom{n}{p} a^{n-p} b^p$$
+    <br><br>
 
     <h2> 2.2 Teorema fundamental de probabilidad </h2>
-    Establece qie la probabilidad de qie ocurra al menos uno de varios eventos mutuamente ecluyentes es la suma de  las probabilidades individuales de esos eventos
+    Establece que la probabilidad de qie ocurra al menos uno de varios eventos mutuamente ecluyentes es la suma de  las probabilidades individuales de esos eventos
+    
     <h2> 2.3  Probabilidad de Eventos</h2>
+    
+    
     <h3> Definición de espacio muestral </h3>
     Es el conjunto de todos los posibles resultados de un experimento aleatorio
     <h3> Definición de evento</h3>
     Es un conjunto de resultados posibles de un experimento aleatorio 
+    
     
     <h3> Simbología</h3>
     <ul>
@@ -277,16 +411,16 @@
     <h2>2.6 Ley multiplicativa</h2>
     <p>Se utiliza para calcular la probabilidad de la intersección de dos eventos (A y B) 
     <h2>2.7 Eventos independientes</h2>
-    <h3>Regla de Bayes</h3>
-    <p>La probabilidad de que dos sucesos dependientes ocurran puede expresarse de la siguiente forma:
-    <br><br> P(A y B) = P(A) x P(B|A), donde B|A se lee como B condicionada por A.
-    <br> También podríamos expresarlo cambiando A por B, de la siguiente forma:
-    <br> P(A y B) = P(B) x P(A|B)
-    <br> y como la parte izquierda de las dos ecuaciones es la misma podríamos igualarlas y obtener otra ecuación diferente:
-    <br> P(A) x P(B|A) = P(B) x P(A|B)
-    <br> P(B|A) = [P(B) x P(A|B)] / P(A)
-    </p>
 
+    
+    <h3>Regla de Bayes</h3>
+    <p>La probabilidad de que dos sucesos dependientes ocurran puede expresarse de la siguiente forma:</p>
+    <p>\( P(A \text{ y } B) = P(A) \times P(B|A) \), donde \( B|A \) se lee como \( B \) condicionada por \( A \).</p>
+    <p>También podríamos expresarlo cambiando \( A \) por \( B \), de la siguiente forma:</p>
+    <p>\( P(A \text{ y } B) = P(B) \times P(A|B) \)</p>
+    <p>Y como la parte izquierda de las dos ecuaciones es la misma, podríamos igualarlas y obtener otra ecuación diferente:</p>
+    <p>\( P(A) \times P(B|A) = P(B) \times P(A|B) \)</p>
+    <p>\( P(B|A) = \frac{P(B) \times P(A|B)}{P(A)} \)</p>
 
     
     <h1>3 Variables aleatorias</h1>
@@ -352,26 +486,51 @@
         <li>\(0 \leq P(X = x) \leq 1\) para todo \(x\).</li>
         <li>\(\sum_x P(X = x) = 1\), donde la suma se extiende sobre todos los valores posibles de \(X\).</li>
     </ul>
+    
 
     <h2>4.2 Distribución binomial</h2>
     <p>La distribución binomial modela el número de éxitos en una serie de \(n\) experimentos de Bernoulli independientes, cada uno con una probabilidad \(p\) de éxito. La función de probabilidad binomial está dada por:</p>
     <p>\[P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}\]</p>
     <p>donde \(X\) es el número de éxitos, \(k\) es un entero entre 0 y \(n\), y \(\binom{n}{k}\) es el coeficiente binomial.</p>
+    <h3>Codigo en Python</h3>
+    <p>from scipy.stats import binom</p>
+    <p>n = 10</p>
+    <p>p = 0.5</p>
+    <p>k=4</p>
+    <p>prob = binom.pmf(k, n, p)</p>
 
     <h2>4.3 Distribución hipergeométrica</h2>
     <p>La distribución hipergeométrica describe la probabilidad de \(k\) éxitos en \(n\) extracciones sin reemplazo de una población finita de tamaño \(N\) que contiene \(K\) éxitos. La función de probabilidad hipergeométrica está dada por:</p>
     <p>\[P(X = k) = \frac{\binom{K}{k} \binom{N-K}{n-k}}{\binom{N}{n}}\]</p>
     <p>donde \(\binom{a}{b}\) es el coeficiente binomial.</p>
+    <h3>Codigo en Python</h3>
+    <p></p>from scipy.stats import hypergeom</p>
+        <p>N = 100</p>
+        <p> n = 20</p>
+        <p>K = 10</p>
+        <p>k=4</p>
+        <p>prob = hypergeom.pmf(k, N, n, K)</p>
 
     <h2>4.4 Distribución de Poisson</h2>
     <p>La distribución de Poisson modela el número de eventos que ocurren en un intervalo de tiempo o espacio fijo, con una tasa promedio \(\lambda\). La función de probabilidad de la distribución de Poisson está dada por:</p>
     <p>\[P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}\]</p>
     <p>donde \(X\) es el número de eventos y \(k\) es un entero no negativo.</p>
+    <h3>Codigo en Python</h3>
+    <p>from scipy.stats import poisson</p>
+        <p>lmbda = 3</p>
+        <p>k=2</p>
+        <p>prob = poisson.pmf(k, lmbda)</p>
+
 
     <h2>4.5 Distribución normal</h2>
     <p>La distribución normal, o distribución de Gauss, es una distribución continua que se caracteriza por su forma de campana y simetría alrededor de la media \(\mu\). Su función de densidad de probabilidad está dada por:</p>
     <p>\[f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}\]</p>
     <p>donde \(\mu\) es la media y \(\sigma\) es la desviación estándar.</p>
+    <h3>Codigo en Python</h3>
+    <p>from scipy.stats import poisson</p>
+        <p>lmbda = 3</p>
+        <p>k=2</p>
+        <p>prob = poisson.pmf(k, lmbda)</p>
 
     <h2>4.6 Distribución T-student</h2>
     <p>La distribución T de Student es una distribución continua utilizada cuando se estima la media de una población normal con una muestra de tamaño pequeño y se desconoce la desviación estándar de la población. Su función de densidad de probabilidad está dada por:</p>
@@ -387,6 +546,26 @@
     <p>La distribución F es una distribución continua que surge en el contexto de la comparación de dos varianzas muestrales y se usa en análisis de varianza (ANOVA). Su función de densidad de probabilidad está dada por:</p>
     <p>\[f(x) = \frac{\left(\frac{d_1}{d_2}\right)^{d_1/2} x^{(d_1/2) - 1}}{B(d_1/2, d_2/2) \left(1 + \frac{d_1 x}{d_2}\right)^{(d_1 + d_2)/2}}\]</p>
     <p>donde \(d_1\) y \(d_2\) son los grados de libertad de los numerador y denominador, respectivamente, y \(B\) es la función beta.</p>
+
+
+    <br><br>
+
+    <h3>5.1.1 Diagrama de dispersión</h3>
+    <p>Un gráfico de dispersión es una representación gráfica de la relación entre dos variables, en la que cada punto del gráfico representa dos valores.</p>
+
+    <h3>5.1.2 Regresión lineal simple </h3>
+    <p>Un método para mostrar la relación entre una variable dependiente (Y) y una variable independiente (X) utilizando una línea recta que minimiza la distancia entre los puntos de observación, que es un cambiador de línea.</p>
+
+    <h3>5.1.3 Correlación</h3>
+    <p>La correlación representa la fuerza y dirección de la relación lineal entre dos variables. Un coeficiente de correlación cercano a +1 indica una relación positiva, un coeficiente de correlación cercano a -1 indica una relación negativa y un coeficiente de correlación cercano a 0 indica que no hay relación lineal.</p>
+
+    <h3>5.1.4 Determinación y análisis de los coeficientes de correlación y de determinación</h3>
+    <p>La correlación y la certeza son medidas estadísticas que permiten el cálculo de relaciones entre variables. El coeficiente (r) representa la fuerza y dirección de la relación lineal, y el coeficiente de determinación (r<sup>2</sup>) representa la proporción de la variación en la variable dependiente explicada por las variables independientes.</p>
+
+    <h3>5.1.5 Distribución normal bidimensional</h3>
+    <p>La distribución normal binomial describe la distribución conjunta de dos variables aleatorias que obedecen a una distribución normal. Se muestra gráficamente mediante formas tridimensionales o líneas planas.</p>
+
+
 </body>
 
 
@@ -417,9 +596,9 @@
         background-color: #ddd;
     }
     .math {
-        font-family: "Times New Roman", Times, serif; /* Elige una fuente adecuada para fórmulas matemáticas */
-        font-size: 18px; /* Tamaño de fuente ajustable */
-        line-height: 1.5; /* Espaciado de línea para una mejor legibilidad */
+        font-family: "Times New Roman", Times, serif; 
+        font-size: 18px; 
+        line-height: 1.5;
       }
    
     

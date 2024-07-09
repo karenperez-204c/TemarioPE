@@ -1,39 +1,36 @@
+/* Estilos CSS ajustados para evitar que el índice tape el contenido */
+
 body {
-    margin: 30px;
-    padding: 30px;
-    font-family: Verdana , sans-serif;
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #f5f5f5;
     color: #000000;
     line-height: 1.6;
 }
 
-h2 {
+h1 {
     font-size: 28px;
-    color: #7a0c95;
-    text-align: left;
+    color: #2936ab;
+    text-align: center;
     margin-top: 30px;
-    margin-bottom: 10px;
-    margin: 30px 0 10px 0;
-    margin: 20px 0 10px 0;
+    margin-bottom: 20px;
 }
 
 h2 {
     font-size: 24px;
-    color: #333;
-    text-align: left;
+    color: #ab298a;
     margin-top: 30px;
-    margin-bottom: 10px;
-    margin: 30px 0 10px 0;
-    margin: 20px 0 10px 0;
+    margin-bottom: 15px;
 }
+
 h3 {
     font-size: 20px;
-    color: #333;
-    text-align: left;
+    color: #3311af;
     margin-top: 20px;
     margin-bottom: 10px;
-
 }
+
 p {
     font-size: 16px;
     color: #000000;
@@ -41,7 +38,7 @@ p {
 }
 
 pre, code {
-    background-color: #171212; /* Fondo negro */
+    background-color: #171212;
     border: 1px solid #ddd;
     padding: 15px;
     margin: 20px 0;
@@ -50,37 +47,125 @@ pre, code {
     overflow: auto;
     border-radius: 5px;
     max-width: 100%;
-    box-shadow: 0 2px 4px, #dcedf8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: #00ff00; /* Color verde para el texto */
 }
+
 code {
     display: block;
     white-space: pre-wrap;
 }
-.content {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff; /* Fondo blanco para el contenido general */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 
 .content {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #171212;
+    background-color: #f5f5f5;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h5{
-    font-family: Arial, sans-serif; 
-    font-size: 48px; 
-    color: #611277; 
-    text-align: center; 
-    margin-top: 50px; 
-    margin-bottom: 50px;
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+#toggleIndex {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#toggleIndex:hover {
+    background-color: #45a049;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px; /* Ajuste para separar el encabezado del contenido */
+    position: relative; /* Añadimos posición relativa para el contenedor */
+    z-index: 0; /* Aseguramos que el contenedor esté por debajo del índice cuando esté visible */
+}
+
+#indice {
+    background-color: #f0f0f0;
+    border-left: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    height: 100%;
+    overflow-y: auto;
+    transition: transform 0.3s ease-out;
+    transform: translateX(-100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Aseguramos que el índice esté sobre el contenido principal */
+}
+
+#indice.show {
+    transform: translateX(0);
+}
+
+#indice h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#indice ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#indice li {
+    margin-bottom: 5px;
+}
+
+#indice a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 5px;
+}
+
+#indice a:hover {
+    background-color: #ddd;
+}
+
+.main-content {
+    margin-left: 220px; /* Espacio para el índice cuando está visible */
+    transition: margin-left 0.3s ease-out; /* Transición suave del margen izquierdo */
+}
+
+main {
+    padding: 20px;
+    background-color: #fff; /* Color de fondo para el contenido principal */
+    border-radius: 8px; /* Bordes redondeados para el contenido principal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
 }

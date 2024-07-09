@@ -6,12 +6,37 @@
     <body style="background-color:#dcedf8"> <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
-    
-    <h5> Temario: <br> PROBABILIDAD Y ESTADISTICA (Verano) </h5>
-</head>
+    <link rel="stylesheet" type="text/css" href="Ejercicios.css">
+    <link rel="stylesheet" type="text/css" href="TablasDeFrecuencias.css">
+    <script src="estilo.js" defer></script>
 
+</head> 
+<body>   
+    <header>
+        <h5> Temario: <br> PROBABILIDAD Y ESTADISTICA (Verano) </h5>
+        <a href="https://app.dataquest.io/profile/230110326"> Link de mi perfil en Data</a>
+        <br><br>
+        <img src="perfil_plataforma.png" class="logo" style="width: 900px; height:auto;">
+        <br>
+    </header>
 
+<br>
+<button id="toggleIndex"> Indice </button>
+<br>
+<div id="container">
+<nav id="indice">
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#section1">Tema 1</a></li>
+        <li><a href="#section2">Tema 2</a></li>
+        <li><a href="#section3">Tema 3</a></li>
+        <li><a href="#section4">Tema 4</a></li>
+        <li><a href="#section5">Tema 5</a></li>
+    </ul>
+</nav>
     
+<main>
+    <section id="section1">
     <h1> 1 - Estadística descriptiva </h1>
     <h2> 1.1 Conceptos básicos de estadística: </h2>
     <ul>
@@ -275,9 +300,12 @@
     </table>
 
     <h2> 1.6 Técnicas de agrupación de datos</h2>
+    La distribución tabular de datos estadísticos se encuentran ordenados en clases y con frecuencia de cada clase, combinando datos originales de varios valores para formar un intervalo de clases.
+    <br>
 
     <h2> 1.7 Técnicas de muestreo </h2>
     Una muestra seleccionada por muestreo de juicio puede basarse en la experiencia de alguien con la población
+    <br>
 
     <h3> Muestreo probabilístico  </h3>
     El muestreo probabilístico es que todos en una población tengan la misma oportunidad de ser seleccionados.
@@ -304,21 +332,16 @@
     Un histograma es una representación de los datos estadísticos, en donde se presentan en el eje horizontal las variables y el eje vertical las frecuencias, se presentada de manera gráfica y cada barra tiene el mismo ancho pero no largo 
     <br><br><img src="image.png" />
 
-
-    <h3>Ejercicios en Jupyter</h3>
+    <h3>Ejercicios prácticos </h3>
     <br>
-    <iframe 
-    src="https://nbviewer.org/github/EduardoGomezTics/Testing/blob/main/main.ipynb"
-    width="100%"
-    height="500"
-    frameborder="0"
-    allowfullscreen>
-    </iframe>
+    <a href="TablasDeFrecuencia.html"> Ejercicios de gráficas y frecuencias </a>
     <br><br>
+    </section>
+
+    
 
 
-
-
+    <section id="section2">
     <h1> 2 - Fundamentos de la Teoría de Probabilidad </h1>
 
     <h2>2.1 Técnicas de Conteo </h2>
@@ -440,18 +463,15 @@
     <p>\( P(A) \times P(B|A) = P(B) \times P(A|B) \)</p>
     <p>\( P(B|A) = \frac{P(B) \times P(A|B)}{P(A)} \)</p>
 
-    <h3>Ejercicios en Jupyter </h3>
+    
+
+    <h3>Ejercicios en Jupyter</h3>
     <br>
-    <iframe 
-    src="https://nbviewer.org/github/imac22/Ejercicios/blob/main/Ejercicios.ipynb"
-    width="100%"
-    height="500"
-    frameborder="0"
-    allowfullscreen>
-    </iframe>
+    <a href="Ejercicios.html"> Ejercicios practicos de combinaciones y permutaciones</a>
     <br><br>
+    </section>
 
-
+    <section id="section3">
     <h1>3 - Variables aleatorias</h1>
     <h2>3.1 Variables aleatorias discretas</h2>
     Una variable aleatoria se llama discreta si se puede contar su conjunto de resultados posibles
@@ -507,9 +527,9 @@
     <a href="https://drive.google.com/file/d/1uLUbBpaoR56FEpD6Q9lvBqMn1VYtXFTG/view?usp=sharing"> Enlace: CONTINUAS</a>
     <h3>Variables aleatorias discretas: VIDEO</h3>
     <a href="https://drive.google.com/file/d/1Xmkvta_3nTpOq3f66lNnTdMTVKbccfug/view?usp=sharing"> Enlace:  DISCRETAS</a>
-
     <br><br>
-
+    
+    <section id="section4"></section>
     <h1>4 - Distribuciones de Probabilidad. </h1>
     
     
@@ -588,8 +608,9 @@
     <h3>Ejercicio 8 :VIDEO</h3>
     <a href="https://drive.google.com/file/d/13GRs8lMLPv_u3e-o0BvNcZOcGwCtsZpb/view?usp=sharing"> Enlace: Ejercicio 8</a>
     <br><br>
-
+    </section>
   
+    <section id="section5"></section>
     <h1>5 - Regresión lineal</h1>
     <h2>5.1 Regresión y correlación</h2>
     <h3>5.1.1 Diagrama de dispersión</h3>
@@ -606,5 +627,13 @@
 
     <h3>5.1.5 Distribución normal bidimensional</h3>
     <p>La distribución normal binomial describe la distribución conjunta de dos variables aleatorias que obedecen a una distribución normal. Se muestra gráficamente mediante formas tridimensionales o líneas planas.</p>
-    
+    </p>
+</section>
+</div>
+
+<footer>
+    <p>Pie de página...</p>
+</footer>
+
+</main>
 </html>

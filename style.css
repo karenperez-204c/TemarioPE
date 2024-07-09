@@ -77,6 +77,32 @@ header h1 {
     font-size: 24px;
 }
 
+#indice {
+    background-color: #f0f0f0;
+    border-left: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    height: 100%;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none; /* Ocultamos inicialmente el índice */
+}
+
+#indice.show {
+    display: block; /* Mostramos el índice cuando tiene la clase 'show' */
+}
+
+#toggleIndex:hover + #indice {
+    display: none; /* Ocultamos el índice cuando se pasa el cursor sobre el botón */
+}
+
+#toggleIndex:active + #indice {
+    display: block; /* Mostramos el índice cuando se hace click en el botón */
+}
+
 #toggleIndex {
     position: fixed;
     top: 50%;

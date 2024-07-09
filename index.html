@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <body style="background-color:#dcedf8"> <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
     
-    <title> Temario PROBABILIDAD Y ESTADISTICA (Verano) </title>
+    <h5> Temario: <br> PROBABILIDAD Y ESTADISTICA (Verano) </h5>
 </head>
 
+
     
-    <h1> Estadística descriptiva </h1>
+    <h1> 1 - Estadística descriptiva </h1>
     <h2> 1.1 Conceptos básicos de estadística: </h2>
     <ul>
         <li> Definición </li> 
@@ -302,7 +304,13 @@
     Un histograma es una representación de los datos estadísticos, en donde se presentan en el eje horizontal las variables y el eje vertical las frecuencias, se presentada de manera gráfica y cada barra tiene el mismo ancho pero no largo 
     <br><br><img src="image.png" />
 
-    <h1> 2. Fundamentos de la Teoría de Probabilidad </h1>
+
+
+
+
+
+
+    <h1> 2 - Fundamentos de la Teoría de Probabilidad </h1>
 
     <h2>2.1 Técnicas de Conteo </h2>
     Las  técnicas de conteo nos ayuda en problemas de conjuntos ya que este nos permite decidir el número de resultados posibles en un total de combinaciones, ayuda a problemas grandes a hacerlos más fáciles de resolver
@@ -368,7 +376,8 @@
 
     <h3> Diagramas de Venn</h3>
     Es la representación gráficas que muestran las relaciones entre los conjuntos (eventos) utilizando círculos o áreas superpuestas que representan las Intersecciones y as uniones entre los conjuntos 
-    <br> <img src="https://concepto.de/wp-content/uploads/2023/12/C-Ejemplo-Diagrama-de-Venn-Matematica.jpg" alt="" height="200">
+    <br><br>
+    <img src="https://concepto.de/wp-content/uploads/2023/12/C-Ejemplo-Diagrama-de-Venn-Matematica.jpg" alt="" height="200">
 
     <h2> 2.4 Probabilidad con Técnicas de Conteo </h2>
     <h3>Axiomas</h3>
@@ -423,7 +432,9 @@
     <p>\( P(B|A) = \frac{P(B) \times P(A|B)}{P(A)} \)</p>
 
 
-    <h1>3 Variables aleatorias</h1>
+
+
+    <h1>3 - Variables aleatorias</h1>
     <h2>3.1 Variables aleatorias discretas</h2>
     Una variable aleatoria se llama discreta si se puede contar su conjunto de resultados posibles
 
@@ -478,7 +489,7 @@
 
 
 
-
+    <h1>4 - Distribuciones de Probabilidad. </h1>
 
     <h2>4.1 Función de probabilidad</h2>
     <p>La función de probabilidad, también conocida como función de masa de probabilidad (PMF, por sus siglas en inglés) en el caso de variables discretas, asigna una probabilidad a cada valor posible de una variable aleatoria discreta. Para una variable aleatoria \(X\), la función de probabilidad \(P(X = x)\) cumple con las siguientes propiedades:</p>
@@ -492,45 +503,49 @@
     <p>La distribución binomial modela el número de éxitos en una serie de \(n\) experimentos de Bernoulli independientes, cada uno con una probabilidad \(p\) de éxito. La función de probabilidad binomial está dada por:</p>
     <p>\[P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}\]</p>
     <p>donde \(X\) es el número de éxitos, \(k\) es un entero entre 0 y \(n\), y \(\binom{n}{k}\) es el coeficiente binomial.</p>
-    <h3>Codigo en Python</h3>
-    <p>from scipy.stats import binom</p>
-    <p>n = 10</p>
-    <p>p = 0.5</p>
-    <p>k=4</p>
-    <p>prob = binom.pmf(k, n, p)</p>
+    <h3>Código en Python</h3>
+    <pre><code>from scipy.stats import binom
+n = 10
+p = 0.5
+k = 4
+prob = binom.pmf(k, n, p)
+</code></pre>
 
     <h2>4.3 Distribución hipergeométrica</h2>
     <p>La distribución hipergeométrica describe la probabilidad de \(k\) éxitos en \(n\) extracciones sin reemplazo de una población finita de tamaño \(N\) que contiene \(K\) éxitos. La función de probabilidad hipergeométrica está dada por:</p>
     <p>\[P(X = k) = \frac{\binom{K}{k} \binom{N-K}{n-k}}{\binom{N}{n}}\]</p>
     <p>donde \(\binom{a}{b}\) es el coeficiente binomial.</p>
-    <h3>Codigo en Python</h3>
-    <p></p>from scipy.stats import hypergeom</p>
-        <p>N = 100</p>
-        <p> n = 20</p>
-        <p>K = 10</p>
-        <p>k=4</p>
-        <p>prob = hypergeom.pmf(k, N, n, K)</p>
+    <h3>Código en Python</h3>
+    <pre><code>from scipy.stats import hypergeom
+N = 100
+n = 20
+K = 10
+k = 4
+prob = hypergeom.pmf(k, N, n, K)
+</code></pre>
 
     <h2>4.4 Distribución de Poisson</h2>
     <p>La distribución de Poisson modela el número de eventos que ocurren en un intervalo de tiempo o espacio fijo, con una tasa promedio \(\lambda\). La función de probabilidad de la distribución de Poisson está dada por:</p>
     <p>\[P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}\]</p>
     <p>donde \(X\) es el número de eventos y \(k\) es un entero no negativo.</p>
-    <h3>Codigo en Python</h3>
-    <p>from scipy.stats import poisson</p>
-        <p>lmbda = 3</p>
-        <p>k=2</p>
-        <p>prob = poisson.pmf(k, lmbda)</p>
-
+    <h3>Código en Python</h3>
+    <pre><code>from scipy.stats import poisson
+lmbda = 3
+k = 2
+prob = poisson.pmf(k, lmbda)
+</code></pre>
 
     <h2>4.5 Distribución normal</h2>
     <p>La distribución normal, o distribución de Gauss, es una distribución continua que se caracteriza por su forma de campana y simetría alrededor de la media \(\mu\). Su función de densidad de probabilidad está dada por:</p>
     <p>\[f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}\]</p>
     <p>donde \(\mu\) es la media y \(\sigma\) es la desviación estándar.</p>
-    <h3>Codigo en Python</h3>
-    <p>from scipy.stats import poisson</p>
-        <p>lmbda = 3</p>
-        <p>k=2</p>
-        <p>prob = poisson.pmf(k, lmbda)</p>
+    <h3>Código en Python</h3>
+    <pre><code>from scipy.stats import norm
+mu = 0
+sigma = 1
+x = 2
+prob = norm.pdf(x, mu, sigma)
+</code></pre>
 
     <h2>4.6 Distribución T-student</h2>
     <p>La distribución T de Student es una distribución continua utilizada cuando se estima la media de una población normal con una muestra de tamaño pequeño y se desconoce la desviación estándar de la población. Su función de densidad de probabilidad está dada por:</p>
@@ -547,9 +562,9 @@
     <p>\[f(x) = \frac{\left(\frac{d_1}{d_2}\right)^{d_1/2} x^{(d_1/2) - 1}}{B(d_1/2, d_2/2) \left(1 + \frac{d_1 x}{d_2}\right)^{(d_1 + d_2)/2}}\]</p>
     <p>donde \(d_1\) y \(d_2\) son los grados de libertad de los numerador y denominador, respectivamente, y \(B\) es la función beta.</p>
 
-
     <br><br>
-
+    <h1>5 - Regresión lineal</h1>
+    <h2>5.1 Regresión y correlación</h2>
     <h3>5.1.1 Diagrama de dispersión</h3>
     <p>Un gráfico de dispersión es una representación gráfica de la relación entre dos variables, en la que cada punto del gráfico representa dos valores.</p>
 
@@ -564,36 +579,5 @@
 
     <h3>5.1.5 Distribución normal bidimensional</h3>
     <p>La distribución normal binomial describe la distribución conjunta de dos variables aleatorias que obedecen a una distribución normal. Se muestra gráficamente mediante formas tridimensionales o líneas planas.</p>
-
-<style>
     
-    table {
-        width: 50%;
-        margin: 20px auto;
-        border-collapse: collapse;
-        font-family: Arial, sans-serif;
-    }
-    th, td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        text-align: center;
-    }
-    th {
-        background-color: #f2f2f2;
-        color: black;
-    }
-    tr:nth-child(even) {
-        background-color: #f9f9f9;
-    }
-    tr:hover {
-        background-color: #ddd;
-    }
-    .math {
-        font-family: "Times New Roman", Times, serif; 
-        font-size: 18px; 
-        line-height: 1.5;
-      }
-   
-    
-</style>
 </html>
